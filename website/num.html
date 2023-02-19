@@ -28,11 +28,21 @@
         <h2>Railway Storage Security System</h2>
     </div>
     <div class="nerv-form">
-        <div class="nerv-form-head">Let's get your Storage to you...</div>
-        <div class="nerv-form-head"> The Password for your seat is 5938</div>
+
+        <div class="nerv-form-head">You got the seat!<div>Seat number is </div><div id="sn"></div><div>Password for your seat is 5938</div>
+        </div>
     </div>
-    
+
     </div>
 </body>
+<script>
+    function randomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    document.getElementById("sn").innerHTML = randomNumber(0,100);
+
+</script>
 
 </html>
