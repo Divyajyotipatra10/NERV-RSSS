@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+  <title>NERV Railways</title>
+</head>
+
+
+<style>
+  .prologue {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .nerv-form {
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #C2C2C2 dotted;
+  }
+
+  .nerv-form-head {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+
+  .nerv-form label {
+    display: block;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .nerv-form label>span {
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+  }
+
+  .nerv-form .input,
+  .select {
+    width: 50%;
+  }
+
+  .nerv-form input.input,
+  .nerv-form .seat,
+  .nerv-form .select {
+    box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+  }
+
+  .nerv-form .input:focus,
+  .nerv-form .seat:focus,
+  .nerv-form .select:focus {
+    border: 1px solid rgb(255, 187, 0);
+  }
+
+
+  .nerv-form input[type=submit],
+  .nerv-form input[type=button] {
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: rgb(255, 187, 0);
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  .nerv-form input[type=submit]:hover,
+  .nerv-form input[type=button]:hover {
+    background: rgb(255, 208, 79);
+    color: #fff;
+  }
+</style>
+
+<body>
+  <div class="prologue">
+    <h1>NERV</h1>
+    <h2>Railway Storage Security System</h2>
+  </div>
+  <div class="nerv-form">
+    <div class="nerv-form-head">Let's get your Storage to you...</div>
+    <form>
+      <label for="field1"><span>Name</span><input type="text" class="input" name="field1" value="" /></label>
+      <label for="field2"><span>Email</span><input type="email" class="input" name="field2" value="" /></label>
+      <label><span>Seat No</span><input type="tel" class="input" name="seat" value="" maxlength="10" /></label>
+      <label for="field4"><span>Class</span><select name="field4" class="select">
+          <option value="AC">AC</option>
+          <option value="Sleeper">Sleeper</option>
+          <option value="A-tier">A-tier</option>
+        </select></label>
+
+
+
+    </form><label><span> </span><a href="num.html" ><button id="but1" type="submit"
+          value="Submit">Submit</button></a>
+  </div>
+
+</body>
+
+</html>
