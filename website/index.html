@@ -82,26 +82,27 @@
 <body>
   <div class="prologue">
     <h1>NERV</h1>
-    <h2>Railway Storage Security System</h2>
+    <h2>Railway Secure Storage System</h2>
   </div>
   <div class="nerv-form">
-    <div class="nerv-form-head">Let's get your Storage to you...</div>
-    <form>
-      <label for="field1"><span>Name</span><input type="text" class="input" name="field1" value="" /></label>
-      <label for="field2"><span>Email</span><input type="email" class="input" name="field2" value="" /></label>
-      <label><span>Seat No</span><input type="tel" class="input" name="seat" value="" maxlength="10" /></label>
-      <label for="field4"><span>Class</span><select name="field4" class="select">
-          <option value="AC">AC</option>
-          <option value="Sleeper">Sleeper</option>
-          <option value="A-tier">A-tier</option>
-        </select></label>
+    <div class="nerv-form-head">Let's book your seat along with your secure storage system...</div>
+    <label for="field1"><span>Name</span><input type="text" class="input" id="field1" value="" /></label>
+    <label for="field2"><span>Email</span><input type="email" class="input" id="field2" value="" /></label>
+    <label for="field4"><span>Mobile No</span><input type="tel" class="input" id="field4" value=""  
+        maxlength="10" /></label>
+    <label for="field5"><span>Tier</span><select id="field5" class="select">
+        <option value="ac1st">1st Tier AC</option>
+        <option value="ac2nd">2nd Tier AC</option>
+        <option value="3rdtier">3rd Tier AC</option>
+        <option value="sleeper">Sleeper</option>
+      </select></label>
 
+    <span> </span><a href="num.html"><input type="button" id="bt" value="Save data to file" /></a>
 
-
-    </form><label><span> </span><a href="num.html" ><button id="but1" type="submit"
-          value="Submit">Submit</button></a>
   </div>
 
 </body>
+
+
 
 </html>
